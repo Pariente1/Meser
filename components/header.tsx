@@ -10,10 +10,10 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navigationItems = [
-    { label: 'Galería', href: '#gallery' },
     { label: 'Nosotros', href: '#about' },
     { label: 'Servicios', href: '#services' },
     { label: 'Contacto', href: '#contact' },
+    { label: 'Galería', href: '#gallery' },
   ]
 
   return (
