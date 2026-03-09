@@ -1,4 +1,5 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import { Lightbulb, Wrench, Sun, Shield, Cable, Zap as Energy, FileCheck, Radio } from 'lucide-react'
 
@@ -74,7 +75,7 @@ export function ServicesSection() {
           {services.map((service, idx) => {
             const Icon = service.icon
             return (
-              <Card key={idx} className="bg-card border-border hover:border-accent/50 transition-all duration-300">
+              <Card key={idx} className="bg-card border-border hover:border-accent/50 transition-all duration-300 flex flex-col h-full">
                 <CardHeader className="pb-3">
                   <div className="flex items-start gap-3">
                     <div className="p-2 rounded-lg bg-blue-100 dark:bg-accent/10 flex-shrink-0">
@@ -83,11 +84,16 @@ export function ServicesSection() {
                     <CardTitle className="text-lg leading-tight">{service.title}</CardTitle>
                   </div>
                 </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-muted-foreground">
+                <CardContent className="flex-grow">
+                  <CardDescription className="text-muted-foreground mb-4">
                     {service.description}
                   </CardDescription>
                 </CardContent>
+                <CardFooter className="flex justify-center pb-6">
+                  <Button className="bg-accent text-accent-foreground hover:bg-accent/90 font-bold border-none">
+                    Ver más
+                  </Button>
+                </CardFooter>
               </Card>
             )
           })}
