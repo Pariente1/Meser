@@ -67,7 +67,7 @@ export function Footer() {
         <div className="border-t border-primary-foreground/20 pt-8 mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm opacity-80">
             <p>
-              © {currentYear} Meser Ingeniería. Todos los derechos reservados.
+              © {currentYear} Pascal. Todos los derechos reservados.
             </p>
             <div className="flex gap-6">
               <a href="#" className="hover:text-secondary transition-colors">Política de Privacidad</a>

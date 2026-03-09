@@ -35,7 +35,7 @@ const values = [
 
 export function AboutSection() {
   return (
-    <section className="w-full py-20 px-4 bg-card transition-colors duration-300">
+    <section id="about" className="w-full py-20 px-4 bg-card transition-colors duration-300">
       <div className="max-w-6xl mx-auto space-y-16">
         {/* ¿Por qué Nosotros? */}
         <div className="space-y-8">

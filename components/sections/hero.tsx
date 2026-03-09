@@ -4,7 +4,7 @@ import { Zap } from 'lucide-react'
 
 export function HeroSection() {
   return (
-    <section className="min-h-screen w-full flex items-center justify-center pt-20 pb-20 px-4 bg-background transition-colors duration-300">
+    <section id="hero" className="min-h-screen w-full flex items-center justify-center pt-20 pb-20 px-4 bg-background transition-colors duration-300">
       <div className="max-w-4xl mx-auto text-center space-y-8">
         {/* Badge 45 Años */}
         <div className="inline-block">
