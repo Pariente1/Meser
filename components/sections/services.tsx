@@ -77,8 +77,8 @@ export function ServicesSection() {
               <Card key={idx} className="bg-card border-border hover:border-accent/50 transition-all duration-300">
                 <CardHeader className="pb-3">
                   <div className="flex items-start gap-3">
-                    <div className="p-2 rounded-lg bg-accent/10 flex-shrink-0">
-                      <Icon className="w-6 h-6 text-accent" />
+                    <div className="p-2 rounded-lg bg-blue-100 dark:bg-accent/10 flex-shrink-0">
+                      <Icon className="w-6 h-6 text-blue-600 dark:text-accent" />
                     </div>
                     <CardTitle className="text-lg leading-tight">{service.title}</CardTitle>
                   </div>
@@ -94,7 +94,7 @@ export function ServicesSection() {
         </div>
 
         {/* Additional Services Info */}
-        <div className="mt-12 p-8 rounded-lg bg-accent/5 border border-accent/20">
+        <div className="mt-12 p-8 rounded-lg bg-blue-50 dark:bg-accent/5 border border-blue-100 dark:border-accent/20">
           <h3 className="text-2xl font-bold text-foreground mb-4">Servicios Complementarios</h3>
           <p className="text-muted-foreground leading-relaxed">
             También ofrecemos renta de equipo para inspección y dictaminación: Analizador de redes, Cámara termográfica, Telurómetro de pinza y de puntas, Probador de resistencia de aislamiento y Secuenciómetro. Proyectos y construcción electromecánica para sectores habitacional, comercial, industrial y agropecuario.

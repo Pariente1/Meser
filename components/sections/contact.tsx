@@ -44,7 +44,7 @@ export function ContactSection() {
             <Card className="bg-background border-border">
               <CardHeader className="pb-3">
                 <div className="flex items-center gap-3">
-                  <MapPin className="w-6 h-6 text-accent flex-shrink-0" />
+                  <MapPin className="w-6 h-6 text-blue-600 dark:text-accent flex-shrink-0" />
                   <CardTitle>Ubicación</CardTitle>
                 </div>
               </CardHeader>
@@ -61,7 +61,7 @@ export function ContactSection() {
             <Card className="bg-background border-border">
               <CardHeader className="pb-3">
                 <div className="flex items-center gap-3">
-                  <Phone className="w-6 h-6 text-accent flex-shrink-0" />
+                  <Phone className="w-6 h-6 text-blue-600 dark:text-accent flex-shrink-0" />
                   <CardTitle>Teléfono</CardTitle>
                 </div>
               </CardHeader>
@@ -79,7 +79,7 @@ export function ContactSection() {
             <Card className="bg-background border-border">
               <CardHeader className="pb-3">
                 <div className="flex items-center gap-3">
-                  <Mail className="w-6 h-6 text-accent flex-shrink-0" />
+                  <Mail className="w-6 h-6 text-blue-600 dark:text-accent flex-shrink-0" />
                   <CardTitle>Email</CardTitle>
                 </div>
               </CardHeader>
@@ -94,7 +94,7 @@ export function ContactSection() {
             <Card className="bg-background border-border">
               <CardHeader className="pb-3">
                 <div className="flex items-center gap-3">
-                  <Clock className="w-6 h-6 text-accent flex-shrink-0" />
+                  <Clock className="w-6 h-6 text-blue-600 dark:text-accent flex-shrink-0" />
                   <CardTitle>Horario</CardTitle>
                 </div>
               </CardHeader>
@@ -114,10 +114,10 @@ export function ContactSection() {
                 <CardTitle>Síguenos</CardTitle>
               </CardHeader>
               <CardContent className="flex gap-4">
-                <a href="#" className="p-2 rounded-lg bg-accent text-accent-foreground hover:opacity-80 transition-opacity">
+                <a href="#" className="p-2 rounded-lg bg-blue-600 dark:bg-accent text-white dark:text-accent-foreground hover:opacity-80 transition-opacity">
                   <Facebook className="w-5 h-5" />
                 </a>
-                <a href="#" className="p-2 rounded-lg bg-accent text-accent-foreground hover:opacity-80 transition-opacity">
+                <a href="#" className="p-2 rounded-lg bg-blue-600 dark:bg-accent text-white dark:text-accent-foreground hover:opacity-80 transition-opacity">
                   <Instagram className="w-5 h-5" />
                 </a>
               </CardContent>

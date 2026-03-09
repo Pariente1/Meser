@@ -51,8 +51,8 @@ export function AboutSection() {
                 <Card key={idx} className="bg-background border-border">
                   <CardHeader className="pb-3">
                     <div className="flex items-start gap-3">
-                      <div className="p-2 rounded-lg bg-accent/10">
-                        <Icon className="w-6 h-6 text-accent" />
+                      <div className="p-2 rounded-lg bg-blue-100 dark:bg-accent/10">
+                        <Icon className="w-6 h-6 text-blue-600 dark:text-accent" />
                       </div>
                       <div>
                         <CardTitle className="text-lg">{benefit.title}</CardTitle>
@@ -111,7 +111,7 @@ export function AboutSection() {
                   const Icon = value.icon
                   return (
                     <div key={idx} className="flex items-center gap-2">
-                      <Icon className="w-4 h-4 text-accent flex-shrink-0" />
+                      <Icon className="w-4 h-4 text-blue-600 dark:text-accent flex-shrink-0" />
                       <span className="text-sm text-muted-foreground">{value.label}</span>
                     </div>
                   )
