@@ -1,4 +1,4 @@
-import { Zap } from 'lucide-react'
+import Image from 'next/image'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -10,11 +10,13 @@ export function Footer() {
           {/* Branding */}
           <div className="space-y-3">
             <div className="flex items-center gap-2">
-              <Zap className="w-6 h-6 text-secondary" />
-              <div>
-                <p className="font-bold text-lg">Meser</p>
-                <p className="text-sm font-light">Ingeniería</p>
-              </div>
+              <Image
+                src="/images/logo.png"
+                alt="Meser Ingeniería"
+                width={120}
+                height={60}
+                className="h-12 w-auto brightness-0 invert"
+              />
             </div>
             <p className="text-sm opacity-80">
               Soluciones profesionales de ingeniería eléctrica desde 1981
