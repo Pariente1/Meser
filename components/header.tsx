@@ -10,7 +10,7 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navigationItems = [
-    { label: 'Inicio', href: '#hero' },
+    { label: 'Galería', href: '#gallery' },
     { label: 'Nosotros', href: '#about' },
     { label: 'Servicios', href: '#services' },
     { label: 'Contacto', href: '#contact' },
@@ -44,10 +44,8 @@ export function Header() {
           ))}
         </div>
 
-        {/* Theme Toggle and Mobile Menu */}
+        {/* Mobile Menu Button and Theme Toggle */}
         <div className="flex items-center gap-4">
-          <ThemeToggle />
-          
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -60,6 +58,8 @@ export function Header() {
               <Menu className="w-6 h-6" />
             )}
           </button>
+          
+          <ThemeToggle />
         </div>
       </nav>
 

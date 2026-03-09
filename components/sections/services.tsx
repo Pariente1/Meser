@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Lightbulb, Zap, Wrench, Sun, Shield, Cable, Zap as Energy, FileCheck, Radio } from 'lucide-react'
+import Image from 'next/image'
+import { Lightbulb, Wrench, Sun, Shield, Cable, Zap as Energy, FileCheck, Radio } from 'lucide-react'
 
 const services = [
   {
@@ -53,9 +54,20 @@ export function ServicesSection() {
   return (
     <section id="services" className="w-full py-20 px-4 bg-background transition-colors duration-300">
       <div className="max-w-6xl mx-auto space-y-12">
-        <div className="text-center space-y-2">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground">Nuestros Servicios</h2>
-          <p className="text-muted-foreground text-lg">Amplia gama de soluciones adaptadas a tus necesidades</p>
+        <div className="text-center space-y-6">
+          <div className="flex justify-center">
+            <Image
+              src="/images/logo.png"
+              alt="Meser Ingeniería"
+              width={150}
+              height={75}
+              className="h-16 w-auto"
+            />
+          </div>
+          <div className="space-y-2">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground">Nuestros Servicios</h2>
+            <p className="text-muted-foreground text-lg">Amplia gama de soluciones adaptadas a tus necesidades</p>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
